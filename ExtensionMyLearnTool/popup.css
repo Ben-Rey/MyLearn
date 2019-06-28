@@ -1,0 +1,24 @@
+body {
+  height: auto;
+  width: 200px;
+  text-align: center !important;
+  padding: 5%;
+  /* background-color: rgb(75, 173, 75) !important; */
+  font-family: "Oswald", sans-serif !important;
+  font-weight: 600 !important;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+}
+#topic {
+  background-color: transparent;
+  color: white;
+}
+#UrlSender {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.label {
+  font-weight: 600;
+  font-size: 1.2em;
+  color: orangered;
+}

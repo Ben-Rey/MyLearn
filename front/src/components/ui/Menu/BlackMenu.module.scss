@@ -1,0 +1,10 @@
+.addButton {
+  cursor: pointer;
+  transition: all ease 0.15s !important;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.233) !important;
+  }
+  &:active {
+    box-shadow: -1px 1px 5px 3px rgba(0, 0, 0, 0.3) inset !important;
+  }
+}

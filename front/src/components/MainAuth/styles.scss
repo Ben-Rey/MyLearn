@@ -1,0 +1,26 @@
+.tab-list-item {
+  display: inline-block;
+  width: 80px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.tab-list-active {
+  background-color: rgb(92, 91, 91);
+  border: solid rgb(236, 126, 126);
+  border-width: 1px 1px 1px 1px;
+}
+.tab-list {
+  padding-left: 27px;
+  margin: auto;
+}
+.tab-content {
+  margin-top: 0px;
+}
