@@ -10,7 +10,7 @@ import { GET_ALL_VIDEO, ADD_VIDEO, GET_TOPIC_LIST, ADD_TOPIC } from "./types";
 export const getAllVideo = () => {
   return (dispatch, getState) => {
     axios
-      .get("http://localhost:3000/service/video/get")
+      .get("http://163.172.83.78:3000/service/video/get")
       .then(response => {
         dispatch({
           type: GET_ALL_VIDEO,
@@ -25,7 +25,7 @@ export const addVideo = video => {
   console.log(video);
   return (dispatch, getState) => {
     axios
-      .post("http://localhost:3000/service/video/add", {
+      .post("http://163.172.83.78:3000/service/video/add", {
         user: localStorage.user,
         videoUrl: video.Url,
         title: video.title,
@@ -51,7 +51,7 @@ export const addVideo = video => {
 export const deleteVideo = id => {
   return (dispatch, getState) => {
     axios
-      .delete("/service/video/delete", {
+      .delete("http://163.172.83.78:3000/service/video/delete", {
         params: {
           user: localStorage.user,
           _id: id
@@ -77,7 +77,7 @@ export const getTopicList = () => {
     //   payload: "response.data"
     // });
     axios
-      .get("http://localhost:3000/service/videoTopic/get", {
+      .get("http://163.172.83.78:3000/service/videoTopic/get", {
         params: {
           user: localStorage.user
         }
@@ -95,7 +95,7 @@ export const getTopicList = () => {
 export const addTopic = topic => {
   return (dispatch, getState) => {
     axios
-      .post("http://localhost:3000/service/videoTopic/add", {
+      .post("http://163.172.83.78:3000/service/videoTopic/add", {
         params: {
           user: localStorage.user,
           topic: topic
