@@ -7,8 +7,8 @@ import Protected from "../tools/hoc/ProtectedRoutes";
 import history from "../history";
 
 //Component
-import Home from "../container/home/home";
-import GlobalSidebar from "../components/ui/Sidebar/GlobalSidebar";
+import Home from "../container/Home/Home";
+import GlobalSidebar from "../components/Sidebar/GlobalSidebar";
 
 //Styles ???
 

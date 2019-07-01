@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import { Icon, Menu, Segment, Sidebar } from "semantic-ui-react";
 import { Route, Link } from "react-router-dom";
 
-import Avatar from "../../Avatar/Avatar";
+import Avatar from "../Avatar/Avatar";
 
-import DashBoard from "../../../container/DashBoard/DashBoard";
-import VideoManager from "../../../container/VideoLibrary/VideoLibrary";
-import PhotosManager from "../../../container/PhotosManager/PhotoManager";
-import Memo from "../../../container/Memo/Memo";
-import Tests from "../../../container/Tests/Tests";
+import DashBoard from "../../container/DashBoard/DashBoard";
+import VideoManager from "../../container/VideoLibrary/VideoLibrary";
+import PhotosManager from "../../container/PhotosManager/PhotoManager";
+import Memo from "../../container/Memo/Memo";
+import Tests from "../../container/Tests/Tests";
 
 export default class GlobalSidebar extends Component {
   constructor(props) {

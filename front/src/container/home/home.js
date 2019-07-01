@@ -4,19 +4,19 @@ import { connect } from "react-redux";
 import { logoutUser } from "../../store/actions/authentication";
 import { withRouter } from "react-router";
 
-import style from "./home.module.scss";
+import style from "./Home.module.scss";
 
 import { Button, Menu, Popup } from "semantic-ui-react";
-import MainAuth from "../../components/MainAuth/mainAuth.js"
+// import MainAuth from "../../components/MainAuth/mainAuth.js"
+import Authentication from "../../components/Authentication/Authentication";
 
 import video from "../../assets/video/homeVideo.mp4";
 import video2 from "../../assets/video/homeVideo.webm";
 import logo from "../../assets/Logo/Logo.svg";
 
 class Home extends Component {
-  componentDidMount() {
-  }
-
+  state = {};
+  toggle = () => this.setState(prevState => ({ open: !prevState.open }));
   handleLogOut = () => {
     this.props.logoutUser();
   };
@@ -42,7 +42,7 @@ class Home extends Component {
             <Popup
               wide
               trigger={
-                <Menu.Item link className={style.title}>
+                <Menu.Item link className={style.title} onClick={this.toggle}>
                   Login
                 </Menu.Item>
               }
@@ -50,9 +50,9 @@ class Home extends Component {
               position="bottom right"
               style={popUpStyle}
               inverted
+              open={this.state.open}
             >
-              <MainAuth />
-             
+              <Authentication />
             </Popup>
             <Menu.Item
               link

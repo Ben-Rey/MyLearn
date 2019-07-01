@@ -5,13 +5,10 @@ import {
   NotificationManager
 } from "react-notifications";
 import "react-notifications/lib/notifications.css";
-
-//Redux
 import * as actionCreators from "../../store/actions/video";
 import { connect } from "react-redux";
-
 import ReactPlayer from "react-player";
-import Menu from "../../components/ui/Menu/BlackMenu";
+import Menu from "../../components/Menu/BlackMenu";
 import Modale from "../../components/Modal/Modals";
 import VideoCard from "../../components/VideoCard/VideoCard";
 import CustomContext from "../../components/CustomContext/CustomContext";
@@ -63,8 +60,6 @@ class VideoLibrary extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(this.props.allVideos);
-
     if (this.props.messageFromBack !== prevProps.messageFromBack) {
       switch (this.props.messageFromBack.message) {
         case "VideoNotOk":

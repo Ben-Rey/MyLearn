@@ -21,7 +21,7 @@ router.get("/get", (req, res) => {
 
 router.post("/add", (req, res) => {
   const NewVideoTopic = new VideoTopic();
-  NewVideoTopic.topic = req.body.params.topic;
+  NewVideoTopic.topic = req.body.params.topic.toUpperCase();
   NewVideoTopic.user = req.body.params.user;
 
   VideoTopic.findOne({

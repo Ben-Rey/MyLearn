@@ -3,6 +3,9 @@ const express = require("express");
 const ProtectedRoutes = require("./protectedRoute");
 var colors = require("colors");
 
+// Import the library:
+var cors = require("cors");
+
 //DataBAse
 const mongoose = require("mongoose");
 const config = require("./db");
@@ -25,7 +28,8 @@ mongoose.connect(config.DB, { useNewUrlParser: true }).then(
 
 //instance server
 const server = express();
-
+// Then use it before your routes are set up:
+server.use(cors());
 server.use(passport.initialize());
 require("./passport")(passport);
 
