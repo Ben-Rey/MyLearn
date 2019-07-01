@@ -200,7 +200,7 @@ class VideoLibrary extends Component {
 
     // Peut etre faire un composent pour alleger ce fichier
     const videoList =
-      this.props.allVideos.length > 0 ? (
+      this.props.allVideos.length > 0 && this.props.allVideos ? (
         <Transition
           visible={this.state.CardsVisibility}
           animation="scale"
