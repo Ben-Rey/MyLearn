@@ -6,7 +6,7 @@ import history from "../../history";
 
 export const registerUser = (user, history) => dispatch => {
   axios
-    .post("http://163.172.83.78:3000/api/users/register", user)
+    .post("http://163.172.83.78:80/api/users/register", user)
     .then(res => history.push("/"))
     .catch(err => {
       dispatch({
@@ -18,7 +18,7 @@ export const registerUser = (user, history) => dispatch => {
 
 export const loginUser = user => dispatch => {
   axios
-    .post("http://163.172.83.78:3000/api/users/login", user)
+    .post("http://163.172.83.78:80/api/users/login", user)
     .then(res => {
       console.log(res);
       const { token } = res.data;
