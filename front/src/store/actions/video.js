@@ -10,7 +10,11 @@ import { GET_ALL_VIDEO, ADD_VIDEO, GET_TOPIC_LIST, ADD_TOPIC } from "./types";
 export const getAllVideo = () => {
   return (dispatch, getState) => {
     axios
-      .get("http://163.172.83.78:80/service/video/get")
+      .get("http://163.172.83.78:80/service/video/get", {
+        params: {
+          user: localStorage.user
+        }
+      })
       .then(response => {
         dispatch({
           type: GET_ALL_VIDEO,

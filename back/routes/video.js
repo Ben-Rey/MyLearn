@@ -93,8 +93,9 @@ router.post("/add", (req, res) => {
 });
 
 //Proteger route pour que l'acces soit privé
+
 router.get("/get", (req, res) => {
-  Video.find().then(result => {
+  Video.find({ user: req.query.user }).then(result => {
     res.send(result);
   });
 });
