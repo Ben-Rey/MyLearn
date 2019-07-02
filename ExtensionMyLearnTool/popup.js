@@ -16,7 +16,7 @@ window.onload = function() {
   });
 
   $.ajax({
-    url: "http://localhost:3000/service/videoTopic/get",
+    url: "http://163.172.83.78:3000/service/videoTopic/get",
     type: "get",
     headers: {
       Authorization:
@@ -53,7 +53,7 @@ $(function() {
     }
 
     $.ajax({
-      url: "http://localhost:3000/service/video/add",
+      url: "http://163.172.83.78:3000/service/video/add",
       type: "post",
       headers: {
         Authorization:

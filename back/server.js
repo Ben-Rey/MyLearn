@@ -1,6 +1,8 @@
 //import
 const express = require("express");
 const ProtectedRoutes = require("./protectedRoute");
+const path = require("path");
+
 var colors = require("colors");
 
 // Import the library:
@@ -28,6 +30,8 @@ mongoose.connect(config.DB, { useNewUrlParser: true }).then(
 
 //instance server
 const server = express();
+server.use(express.static(path.join(__dirname, "build")));
+
 // Then use it before your routes are set up:
 server.use(cors());
 server.use(passport.initialize());
@@ -55,10 +59,8 @@ server.use("/service/videoTopic", videoTopic);
 
 //routes
 server.get("/", function(req, res) {
-  res.setHeader("Content-Type", "text/html");
-  res
-    .status(200)
-    .send("<h1>Bonjour et bienvenue sur le serveur node de carlben</h1>");
+  // res.setHeader("Content-Type", "text/html");
+  res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
 //launch server

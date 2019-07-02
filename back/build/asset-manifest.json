@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.53bfe894.chunk.css",
+    "main.js": "/static/js/main.71bac135.chunk.js",
+    "main.js.map": "/static/js/main.71bac135.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.0f801562.chunk.css": "/static/css/2.0f801562.chunk.css",
+    "static/js/2.ff6cffd8.chunk.js": "/static/js/2.ff6cffd8.chunk.js",
+    "static/js/2.ff6cffd8.chunk.js.map": "/static/js/2.ff6cffd8.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d6288f92b3f90b5bd93f0cbe2b11eea4.js": "/precache-manifest.d6288f92b3f90b5bd93f0cbe2b11eea4.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.0f801562.chunk.css.map": "/static/css/2.0f801562.chunk.css.map",
+    "static/css/main.53bfe894.chunk.css.map": "/static/css/main.53bfe894.chunk.css.map",
+    "static/media/DashBoardAlbumBack.jpg": "/static/media/DashBoardAlbumBack.7e606196.jpg",
+    "static/media/DashBoardMemoBack.jpg": "/static/media/DashBoardMemoBack.ffd39d54.jpg",
+    "static/media/DashBoardVideoBack.jpg": "/static/media/DashBoardVideoBack.9b3965b3.jpg",
+    "static/media/Logo.svg": "/static/media/Logo.2e27ee75.svg",
+    "static/media/homeVideo.mp4": "/static/media/homeVideo.954edba7.mp4",
+    "static/media/homeVideo.webm": "/static/media/homeVideo.b129c4e6.webm",
+    "static/media/notifications.css": "/static/media/notification.c0d3c94c.eot"
+  }
+}
