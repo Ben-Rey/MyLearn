@@ -58,7 +58,7 @@ server.use("/service/video", video);
 server.use("/service/videoTopic", videoTopic);
 
 //routes
-server.get("/", function(req, res) {
+server.get("/*", function(req, res) {
   // res.setHeader("Content-Type", "text/html");
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
