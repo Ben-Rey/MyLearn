@@ -64,7 +64,7 @@ server.get("/*", function(req, res) {
 });
 
 //launch server
-const PORT = process.env.PORT || 3000;
+const PORT = 80;
 
 server.listen(PORT, () => {
   console.log(`Server is running on PORT ${PORT}`.rainbow.bold);
