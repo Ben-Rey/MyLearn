@@ -4,9 +4,7 @@ const axios = require("axios");
 const Video = require("../models/video");
 var ObjectId = require("mongodb").ObjectID;
 
-const credential = "AIzaSyB6WEtKGVmi1P9jFdy8zSwUXpcT_H-2vDY";
-
-// getInfoVideo("https://www.youtube.com/watch?v=Ks-_Mh1QhMc");
+const credential = "";// add your credential from youtube dev
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 router.post("/add", (req, res) => {
